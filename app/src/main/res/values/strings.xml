@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Desempeño2_GestionDeReservasDeHotel</string>
+    <string name="txt_view1">Gestión de Reservas de Hotel</string>
+    <string name="txt_view2">Seleccione la habitacion:</string>
+    <string name="radio_btn1">Economica</string>
+    <string name="radio_btn2">Comoda</string>
+    <string name="radio_btn3">De Lujo</string>
+    <string name="label_noches">Cantidad de noches:</string>
+    <string name="btn_calcular">Calcular Importe</string>
+    <string name="importe_default">$ 0,00</string>
+    <string name="datos_del_cliente">Datos del cliente:</string>
+    <string name="nombre_edtext">Nombre:</string>
+    <string name="email_edtext">Email:</string>
+    <string name="dni_edtext">DNI:</string>
+    <string name="ingrese_cantidad">Ingrese cantidad</string>
+    <string name="registrar_btn">Registrar</string>
+    <string name="buscar_btn">Buscar</string>
+    <string name="limpiar_btn">Limpiar</string>
+    <string name="ver_comprobante_btn">Ver comprobante</string>
+    <string name="tv1_comprobante">Comprobante de reserva</string>
+    <string name="tv2_comprobante">Nombre :</string>
+    <string name="tv3_comprobante">DNI :</string>
+    <string name="tv4_comprobante">Email :</string>
+    <string name="tv5_comprobante">Tipo de habitacion :</string>
+    <string name="tv6_comprobante">Total a pagar :</string>
+    <string name="tv7_comprobante">Desarrollado por Juan Manuel Emiliani</string>
+    <string name="btn1_comprobante">Volver</string>
+
+</resources>

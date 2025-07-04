@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFF90">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/txtview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
+            android:paddingBottom="8dp"
+            android:text="@string/txt_view1"
+            android:textAlignment="center"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/angkor"
+            android:paddingBottom="8dp"
+            android:text="@string/txt_view2"
+            android:textColor="#1B5E20"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#8E24AA"
+                android:text="@string/radio_btn1"
+                android:textColor="#8E24AA"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="end"
+                android:src="@drawable/img_economica"
+                android:contentDescription="@string/radio_btn1" />
+
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#8E24AA"
+                android:text="@string/radio_btn2"
+                android:textColor="#8E24AA"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="end"
+                android:src="@drawable/img_comoda"
+                android:contentDescription="@string/radio_btn2" />
+
+            <RadioButton
+                android:id="@+id/radiobtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#8E24AA"
+                android:text="@string/radio_btn3"
+                android:textColor="#8E24AA"
+                android:textStyle="bold|italic"
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="end"
+                android:src="@drawable/img_delujo"
+                android:contentDescription="@string/radio_btn3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_del_cliente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="@string/nombre_edtext"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="@string/email_edtext"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextDNI"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/dni_edtext"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewNoches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_noches"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNoches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/ingrese_cantidad"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewImporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="@string/importe_default"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="calcularImporte"
+            android:text="@string/btn_calcular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:background="@null"
+                    android:contentDescription="Registrar"
+                    android:onClick="registrarReserva"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_registro" />
+
+                <ImageButton
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:background="@null"
+                    android:contentDescription="Buscar"
+                    android:onClick="buscarPorDni"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_buscar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLimpiar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:background="@null"
+                    android:contentDescription="Limpiar"
+                    android:onClick="limpiarCampos"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_limpiar" />
+
+                <ImageButton
+                    android:id="@+id/btnVer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:contentDescription="Ver comprobante"
+                    android:onClick="verComprobante"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_ver" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
